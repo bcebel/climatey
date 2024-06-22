@@ -40,7 +40,7 @@ function Nav() {
       <h1>
         <Link to="/">
           <span role="img"> </span>
-          Sketchy Business
+          Kitty Business
         </Link>
       </h1>
 
