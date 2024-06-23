@@ -7,6 +7,7 @@ db.once("open", async () => {
   const categories = await Category.insertMany([
     { name: "Kitty Litter" },
     { name: "Carbon Credits" },
+    { name: "Home" },
     { name: "Garden" },
     //     { name: [Artist] },
   ]);
@@ -17,87 +18,43 @@ db.once("open", async () => {
 
   const products = await Product.insertMany([
     {
-      name: "Lavender Litter",
-      description: "Lavender Fields Furrever.",
-      artist: "Super Lightweight, absorbent and clumping kitty litter",
-      image: "/images/cat3.jpeg",
+      name: "PurrCarbon Kitty Litter",
+      description: "Super Lightweight, absorbent and clumping kitty litter",
+      artist:
+        "Carbon Negative, Super Lightweight, absorbent and clumping kitty litter",
+      image: "/images/futurecat.jpeg",
       category: categories[0]._id,
       price: 20.99,
-      quantity: 1,
+      quantity: 100,
     },
-    {
-      name: "Cosmic Kitty Litter",
-      description: "Totally groovy cat litter for your totally groovy cat.",
-      artist: "Frankensense Aromatherapy for your cat.",
-      image: "/images/cat4.jpeg",
-      category: categories[0]._id,
-      price: 20.99,
-      quantity: 2,
-    },
-    {
-      name: "Unscented Cat Litter",
-      description:
-        "Unscented Cat Litter for the discerning cat owner.  10 LB bag.",
-      artist: "Simple, clean, and effective.",
-      image: "/images/cat8.png",
-      category: categories[0]._id,
-      price: 20.99,
-      quantity: 1,
-    },
+
     {
       name: "Carbon Credits",
       description: "1 ton of CO2 offset",
-      artist: "Thank you for offsetting carbon emissions!",
+      artist: "Every ton of biochar produced sequesters 3 tons of CO2.",
       image: "/images/carboncredit.jpeg",
       category: categories[1]._id,
       price: 200,
-      quantity: 1,
-    },
-    {
-      name: "Carbon Footprints Stepping Stones",
-      description: "1 Foot by 1 Foot square stepping stones.",
-      artist: "Large Square Tiles",
-      image: "/images/pavers.jpeg",
-      category: categories[2]._id,
-      price: 20,
-      quantity: 1,
-    },
-    {
-      name: "Carbon Footprints Stepping Stones",
-      description: "6 inch by 6 inch square stepping stones.",
-      artist: "Small Square Tiles",
-      image: "/images/pavers.jpeg",
-      category: categories[2]._id,
-      price: 20,
-      quantity: 1,
-    },
-    {
-      name: "Carbon Footprints Stepping Stones",
-      description: "6 inch by 12 inch rectangular stepping stones.",
-      artist: "Rectangle Tiles",
-      image: "/images/pavers.jpeg",
-      category: categories[2]._id,
-      price: 20,
-      quantity: 1,
-    },
-    {
-      name: "Gnome",
-      description:
-        "Imagine Glimmerwick the Gnome standing about 12 inches tall, with a cheerful expression on his face.  Glimmerwick's attire is crafted from textured, carbonized cement, which gives him a weathered appearance that blends harmoniously with garden surroundings.",
-      artist: "Fawn Z. Hay",
-      image: "/images/gnome.jpeg",
-      category: categories[2]._id,
-      price: 200,
-      quantity: 1,
+      quantity: 100,
     },
     {
       name: "Flower Pot",
-      description: "An elegant carbonized cement flower pot.",
-      artist: "C. Ment",
+      description: "Carbonized Cement Flower Pot.  Elegant and durable.  It is lighter than traditional concrete",
+      artist: "An elegant carbonized cement flower pot.",
       image: "/images/flowerpot.jpeg",
       category: categories[2]._id,
       price: 200,
-      quantity: 1,
+      quantity: 100,
+    },
+    {
+      name: "CarbonGarden",
+      description:
+        "A soil booster made from biochar and compost.  Helps alkalize soil and retain moisture.     Improved Soil Fertility and Nutrient Retention Enhanced Nutrient Availability Biochar increases the availability of essential nutrients like nitrogen, phosphorus, and potassium in the soil. Its porous structure allows it to retain nutrients and slowly release them to plants, reducing nutrient leaching and enhancing soil fertility. Microbial Activity Enhanced Soil Structure and Water Retention Improved Soil Aeration Water Holding Capacity This increased water holding capacity reduces the frequency of irrigation needed and helps plants withstand periods of water stress Carbon Sequestration and Environmental Benefits Carbon Storage Reduction of Greenhouse Gas Emissions",
+      artist: "Biochar Soil Booster with Compost",
+      image: "/images/soil.jpeg",
+      category: categories[3]._id,
+      price: 200,
+      quantity: 100,
     },
   ]);
 
