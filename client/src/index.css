@@ -119,10 +119,10 @@ button[disabled] {
 
 img {
   max-width: 100%;
-  border: 1rem;
-  border-style: inset;
-  border-color: #752f06;
-  box-shadow: .3rem .5rem 1rem 0 rgb(26, 25, 25);
+  border: .1rem;
+  border-style:solid;
+  border-color: #000000;
+border-radius: 25em;
 }
 
 span[role="img"] {
