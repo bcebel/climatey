@@ -1,5 +1,5 @@
 {
-  "name": "sketchy_business",
+  "name": "breaking_biochar",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -12,15 +12,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/owennolson/Sketchy_business.git"
+    "url": "git+https://github.com/bcebel/climatey.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/owennolson/Sketchy_business/issues"
+    "url": "https://github.com/bcebel/climatey/issues"
   },
-  "homepage": "https://github.com/owennolson/Sketchy_business#readme",
+  "homepage": "https://github.com/bcebel/climatey#readme",
   "devDependencies": {
     "concurrently": "^8.1.0"
   }
