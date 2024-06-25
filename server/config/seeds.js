@@ -34,7 +34,7 @@ db.once("open", async () => {
       artist: "Every ton of biochar produced sequesters 3 tons of CO2.",
       image: "/images/carboncredit.jpeg",
       category: categories[1]._id,
-      price: 200,
+      price: 250,
       quantity: 100,
     },
     {
@@ -43,7 +43,7 @@ db.once("open", async () => {
       artist: "An elegant carbonized cement flower pot.",
       image: "/images/flowerpot.jpeg",
       category: categories[2]._id,
-      price: 200,
+      price: 50,
       quantity: 100,
     },
     {
@@ -53,7 +53,7 @@ db.once("open", async () => {
       artist: "Biochar Soil Booster with Compost",
       image: "/images/soil.jpeg",
       category: categories[3]._id,
-      price: 200,
+      price: 40,
       quantity: 100,
     },
   ]);
