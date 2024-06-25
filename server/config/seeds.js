@@ -21,7 +21,7 @@ db.once("open", async () => {
       name: "PurrCarbon Kitty Litter",
       description: "Super Lightweight, absorbent and clumping kitty litter",
       artist:
-        "Carbon Negative, Super Lightweight, absorbent and clumping kitty litter",
+        "Carbon Negative kitty litter, lightweight unscented.",
       image: "/images/futurecat.jpeg",
       category: categories[0]._id,
       price: 20.99,

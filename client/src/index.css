@@ -1,12 +1,19 @@
 :root {
-  --primary: #18242D;
-  --secondary: #1D9BF0;
-  --tertiary: #a0c8f0;
+  --primary: #f4f4f4;
+  --secondary: #ffffff;
+  --tertiary: #e5e5e5;
   --light: #FFB6C1;
-  --dark: #15202B;
+  --dark: #161616;
+  --text:#161616;
+  --border:#525252;
+  --background: #262626;
   --error: rgb(228, 46, 1);
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
+  --header:#4589ff;
+  --itemtext:#4589ff;
+  --button:#002d9c;
+  --border:#e0e0e0;
 }
 
 * {
@@ -25,9 +32,9 @@ body {
   font-weight: 700;
   line-height: 1.5;
   font-size: 16px;
-  color: #A8E6CF;
+  color: var(--text);
   font-style: bold;
-background: rgb(0,0,0);
+background: var(--primary);
 
 }
 ul {
@@ -75,7 +82,7 @@ p {
 }
 
 a {
-  color:#FFD700;
+  color: var(--itemtext);
   text-decoration: none;
   font-weight: bold;
 }
@@ -86,10 +93,17 @@ a:hover {
 
 header {
 backdrop-filter: blur(100px);
+  background-color: var(--primary);
+  color: var(--header);
+  padding: 1rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header a {
-  color: var(--light);
+  color: var(--header);
 }
 
 button {
@@ -101,9 +115,9 @@ button {
   outline: none;
   cursor: pointer;
   margin: 1rem;
-  color: var(--dark);
-  background-color: var(--primary);
-  background-color: #FFB6C1;
+  color: var(--primary);
+  background-color: var(--button);
+
   box-shadow: .1rem .2rem .5rem 0 rgb(26, 25, 25);
   
 }
@@ -121,7 +135,7 @@ img {
   max-width: 100%;
   border: .1rem;
   border-style:solid;
-  border-color: #000000;
+  border-color: var(--border);
 
 }
 
@@ -196,6 +210,7 @@ select {
 .mx-1 {
   margin-right: var(--spacing-one);
   margin-left: var(--spacing-one);
+  color:var(--light)
 }
 
 .mx-2 {
@@ -216,6 +231,9 @@ select {
 .px-1 {
   padding-right: var(--spacing-one);
   padding-left: var(--spacing-one);
+      display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .px-2 {
@@ -236,6 +254,8 @@ select {
 .card {
   width: 25%;
   text-align: center;
+  background-color:var(--secondary);
+
 }
 
 .error-text {
@@ -262,4 +282,7 @@ select {
 
 .spacing{
   margin-top: 2rem;
+}
+.melonball{
+  display:flex;
 }
