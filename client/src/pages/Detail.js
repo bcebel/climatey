@@ -88,7 +88,7 @@ function Detail() {
         <div className="container my-1">
           <Link to="/">← Back to Art</Link>
 
-          <h2>Title: {currentProduct.name}</h2>
+          <h2>{currentProduct.name}</h2>
 
           <p>Description: {currentProduct.description}</p>
           <p>Artist: {currentProduct.artist}</p>

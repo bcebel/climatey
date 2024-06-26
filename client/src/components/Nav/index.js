@@ -30,6 +30,14 @@ function Nav() {
           <li className="mx-1">
             <Link to="/login">Login</Link>
           </li>
+          <li className="mx-1">
+            <Link
+              to="https://bcebel.github.io/breakingbiochar/"
+              target="_blank"
+            >
+              About Us
+            </Link>
+          </li>
         </ul>
       );
     }
