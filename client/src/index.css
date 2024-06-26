@@ -144,28 +144,27 @@ span[role="img"] {
 }
 
 form {
-  width: 40%;
-  border: 1rem #752f06 inset;
+  width: 50%;
   /* border-radius: 1rem; */
-  height: 28rem;
-  background-color: #fffef0;
+
+  background-color: var(--secondary);
   margin: 1rem;
   box-shadow: .3rem .5rem 1rem 0 rgb(26, 25, 25);
 }
+
 label {
-  color:#752f06;
+  color: var(--text);
   margin: .5rem;
 }
 input {
-  color:#752f06;
+  color:var(--primary);
   font-size: 1rem;
   padding: 0.25rem;
-  border: 1px solid var(--dark);
+  border: 1px solid var(--button);
   outline: none;
   border-radius: 3px;
-  border-color: #752f06;
   transition: box-shadow 0.2s;
-  background-color: #f3f9ff;
+  background-color:var(--dark);
   margin: .2rem;
 }
 
@@ -277,7 +276,7 @@ select {
 
 .form-container button[type="submit"] {
   margin-top: 40px;
-  background-color: gray;
+
 }
 
 .spacing{
