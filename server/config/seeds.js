@@ -25,7 +25,7 @@ db.once("open", async () => {
       image: "/images/futurecat.jpeg",
       category: categories[0]._id,
       price: 20.99,
-      quantity: 100,
+      quantity: 1,
     },
 
     {
@@ -35,7 +35,7 @@ db.once("open", async () => {
       image: "/images/carboncredit.jpeg",
       category: categories[1]._id,
       price: 250,
-      quantity: 100,
+      quantity: 1,
     },
     {
       name: "Flower Pot",
@@ -44,7 +44,7 @@ db.once("open", async () => {
       image: "/images/flowerpot.jpeg",
       category: categories[2]._id,
       price: 50,
-      quantity: 100,
+      quantity: 1,
     },
     {
       name: "CarbonGarden",
@@ -54,7 +54,7 @@ db.once("open", async () => {
       image: "/images/soil.jpeg",
       category: categories[3]._id,
       price: 40,
-      quantity: 100,
+      quantity: 1,
     },
   ]);
 
